@@ -423,5 +423,29 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Handle contact form submission
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            const message = formData.get('message');
+            
+            // Simple validation
+            if (!name || !email || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Simulate form submission
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    }
+
     console.log('Deeblooms website loaded successfully!');
 }); 

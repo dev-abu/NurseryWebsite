@@ -217,8 +217,8 @@ body {
 
 .contact-content {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
 }
 
 .contact-info h3 {
@@ -242,6 +242,44 @@ body {
 
 .contact-item p {
     color: #666;
+}
+
+.contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+.contact-form h3 {
+    color: #2c5aa0;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2c5aa0;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
 }
 
 /* Footer */
