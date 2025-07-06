@@ -542,17 +542,6 @@ body {
     box-shadow: 0 12px 35px rgba(0,0,0,0.15);
 }
 
-.contact-item.special-offer {
-    border-left-color: #ff6b6b;
-    background: linear-gradient(135deg, #fff5f5, #ffe8e8);
-    animation: glow 2s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-    from { box-shadow: 0 8px 25px rgba(255,107,107,0.3); }
-    to { box-shadow: 0 8px 35px rgba(255,107,107,0.6); }
-}
-
 .contact-instruction {
     background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(248,249,250,0.95));
     padding: 2.5rem;
