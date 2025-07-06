@@ -49,11 +49,16 @@ body {
 }
 
 .nav-logo h2 {
-    color: white;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin: 0;
     font-size: 2rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    animation: bounce 2s infinite;
+    animation: bounce 2s infinite, gradientShift 3s ease infinite;
+    font-weight: 800;
 }
 
 @keyframes bounce {
